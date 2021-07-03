@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			position: relative;
+		}
+		.menu{
+			width: 200px;
+			background: #F97D9A;
+			height: 500px;
+			margin: auto;
+		}
+		ul{
+			list-style: none;
+		}
+		.menu li{
+			width: 200px;
+			height: 50px;
+			background: #44B754;
+			border-bottom: solid 1px #3BFC7B;
+		}
+		ul li a{
+			text-decoration: none;
+			color: black;
+			padding-left: 10px;
+			line-height: 50px;
+			display: block;
+		}
+		ul.sub {
+			background: #B7E932;
+			position: absolute;
+			top: 0;
+			left: 100%;
+			display: none;
+		}
+		.menu > li:hover > ul{
+			display: block;
+			border-left: solid 1px white;
+		}
+		.menu li:hover > a{
+			color: white;
+			background: #297534;
+		}
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<ul class="menu">
+			<li><a href="#">Tin tức trong ngày</a>
+				<ul class="sub">
+					<li><a href="#">Tin Hà Nội</a></li>
+					<li><a href="#">Tin Tp Hồ Chí Minh</a></li>
+					<li><a href="#">Tin Đà nẵng</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Bóng đá</a>
+				<ul class="sub">
+					<li><a href="#">Lịch thi đấu</a></li>
+					<li><a href="#">Bảng xếp hạng</a></li>
+					<li><a href="#">Video bàn thắng</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Thế giới</a></li>
+			<li><a href="#">Thời trang</a></li>
+		</ul>
+	</div>
+</body>
+</html>

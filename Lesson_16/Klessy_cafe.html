@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klessy Cafe</title>
+    <style>
+        *{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			position: relative;
+			font-family: sans-serif;
+		}
+		#all{
+			width: 960px;
+			min-height: 600px;
+			margin: auto;
+			/*background: #589EED;*/
+		}
+		#header{
+			height: 100px;
+			width: 960px;
+			/*background: #66C6E6;*/
+
+		}
+
+		#header #logo{
+			width: 250px;
+			height: 100px;			
+			/*background: #FA9F9F;*/
+			float: left;
+		}
+		#logo img{
+			position: absolute;
+			bottom: 0;
+			left: 50px;
+		}
+
+		/*--------------------------*/
+		#menu{
+			width: 650px;
+			height: 100px;
+			/*background: #D1BC47;*/
+			float: left;
+		}
+		#menu ul{
+			list-style: none;
+			font-famliy: sans-serif;
+			font-size: 16px;
+			position: absolute;
+			right: 0;
+			top: 40px;
+		}
+		#menu ul li{
+			float: left;
+			width: 90px;
+			height: 50px;
+			/*background: #519C53;*/
+
+		}
+		#menu ul li a{
+			display: block;
+			text-decoration: none;
+			color: #7C7373;
+			font-weight: 800;
+			line-height: 50px;
+			text-align: center;
+			margin-right: 5px;
+			/*background: #D9EC80;*/
+		}
+		ul#sub_menu{
+			display: none;
+			/*background: #C59C9C;*/
+			background: white;
+		}
+		#menu li:hover > ul{
+			display: block;
+		}
+		#sub_menu li:hover > a{
+			color: blue;
+			font-weight: bold;
+		}
+
+		/*----------------------------*/
+		#content{
+			width: 960px;
+			height: 650px;
+			background: url(Untitled.png) no-repeat;
+			background-size: cover;
+			/*background: #C5714C;*/
+			/*float: left;*/
+			z-index: -1;
+		}
+		#content #left{
+			width: 250px;
+			height: 650px;
+			float: left;
+			background-image: linear-gradient(#FF7777, white);
+			opacity: 0.8;
+		}
+		#left h1{
+			color: white;
+			font-size: 45px;
+			margin-top: 200px;
+			margin-left: 10px;
+			line-height: 1.6;
+			text-align: center;
+		}
+		#left h3{
+			color: white;
+			font-size: 15px;
+			text-transform: uppercase;
+			line-height: 1.6;
+			text-align: center;
+		}
+		#left input[type=submit]{
+			width: 150px;
+			height: 40px;
+			color: #F74D26;
+			padding: 10px 15px;
+			margin: 20px;
+			border-radius: 5px;
+		}
+		#content #right{
+			width: 650px;
+			height: 650px;
+			/*background: #2FCEF0;*/
+			float: left;
+		}
+	</style>
+</head>
+
+<body>
+    <div id="all">
+        <div id="header">
+            <div id="logo"><img src="title.png" alt="title"></div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#" style="color: red">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Chefs</a></li>
+                    <li><a href="#">Features</a>
+                        <ul id="sub_menu">
+                            <li><a href="#">Feature 1</a></li>
+                            <li><a href="#">Feature 2</a></li>
+                            <li><a href="#">Feature 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div id="left">
+                <div>
+                    <h1>KlessyCafe</h1>
+                    <h3>The best Experience</h3>
+                </div>
+                <input type="submit" value="Make A Reservation">
+            </div>
+            <div id="right">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
